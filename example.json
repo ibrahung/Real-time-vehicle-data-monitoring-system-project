@@ -1,0 +1,147 @@
+{
+   "Car_Data": [
+	{
+		"Device_ID" : 1001,
+		"Time_Stamp" : 1711158402,
+		"Car_Status" : "ON",
+		"RPM" : 1158,
+		"Speed" : 67,
+		"Acc" : 61,
+		"Brake_Status" : 0,
+		"Temp" : 74,
+		"Latitude" : 10.765751,
+		"Longitude" : 106.667677
+	},
+	{
+		"Device_ID" : 1001,
+		"Time_Stamp" : 1711158403,
+		"Car_Status" : "ON",
+		"RPM" : 5630,
+		"Speed" : 65,
+		"Acc" : 93,
+		"Brake_Status" : 1,
+		"Temp" : 96,
+		"Latitude" : 10.752858,
+		"Longitude" : 106.652877
+	},
+	{
+		"Device_ID" : 1001,
+		"Time_Stamp" : 1711158404,
+		"Car_Status" : "ON",
+		"RPM" : 1000,
+		"Speed" : 85,
+		"Acc" : 45,
+		"Brake_Status" : 1,
+		"Temp" : 81,
+		"Latitude" : 10.757998,
+		"Longitude" : 106.665621
+	},
+	{
+		"Device_ID" : 1001,
+		"Time_Stamp" : 1711158405,
+		"Car_Status" : "ON",
+		"RPM" : 5196,
+		"Speed" : 103,
+		"Acc" : 84,
+		"Brake_Status" : 1,
+		"Temp" : 97,
+		"Latitude" : 10.768791,
+		"Longitude" : 106.650942
+	},
+	{
+		"Device_ID" : 1001,
+		"Time_Stamp" : 1711158406,
+		"Car_Status" : "ON",
+		"RPM" : 4457,
+		"Speed" : 0,
+		"Acc" : 89,
+		"Brake_Status" : 1,
+		"Temp" : 90,
+		"Latitude" : 10.765825,
+		"Longitude" : 106.664439
+	},
+	{
+		"Device_ID" : 1001,
+		"Time_Stamp" : 1711158407,
+		"Car_Status" : "ON",
+		"RPM" : 2551,
+		"Speed" : 62,
+		"Acc" : 8,
+		"Brake_Status" : 0,
+		"Temp" : 87,
+		"Latitude" : 10.761252,
+		"Longitude" : 106.669142
+	},
+	{
+		"Device_ID" : 1001,
+		"Time_Stamp" : 1711158408,
+		"Car_Status" : "ON",
+		"RPM" : 1211,
+		"Speed" : 65,
+		"Acc" : 27,
+		"Brake_Status" : 1,
+		"Temp" : 63,
+		"Latitude" : 10.752015,
+		"Longitude" : 106.661165
+	},
+	{
+		"Device_ID" : 1001,
+		"Time_Stamp" : 1711158409,
+		"Car_Status" : "ON",
+		"RPM" : 4535,
+		"Speed" : 21,
+		"Acc" : 55,
+		"Brake_Status" : 1,
+		"Temp" : 88,
+		"Latitude" : 10.767334,
+		"Longitude" : 106.662182
+	},
+	{
+		"Device_ID" : 1001,
+		"Time_Stamp" : 1711158410,
+		"Car_Status" : "ON",
+		"RPM" : 4475,
+		"Speed" : 74,
+		"Acc" : 75,
+		"Brake_Status" : 1,
+		"Temp" : 86,
+		"Latitude" : 10.761653,
+		"Longitude" : 106.666956
+	},
+	{
+		"Device_ID" : 1001,
+		"Time_Stamp" : 1711158411,
+		"Car_Status" : "ON",
+		"RPM" : 4513,
+		"Speed" : 40,
+		"Acc" : 92,
+		"Brake_Status" : 1,
+		"Temp" : 75,
+		"Latitude" : 10.764079,
+		"Longitude" : 106.654804
+	},
+	{
+		"Device_ID" : 1001,
+		"Time_Stamp" : 1711158412,
+		"Car_Status" : "ON",
+		"RPM" : 3814,
+		"Speed" : 82,
+		"Acc" : 48,
+		"Brake_Status" : 1,
+		"Temp" : 71,
+		"Latitude" : 10.756670,
+		"Longitude" : 106.668984
+	},
+	{
+		"Device_ID" : 1001,
+		"Time_Stamp" : 1711158413,
+		"Car_Status" : "ON",
+		"RPM" : 3399,
+		"Speed" : 101,
+		"Acc" : 46,
+		"Brake_Status" : 0,
+		"Temp" : 83,
+		"Latitude" : 10.764491,
+		"Longitude" : 106.651918
+	}]
+}
