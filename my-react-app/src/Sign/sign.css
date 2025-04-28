@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /*background: url("https://images.unsplash.com/photo-1516771317026-14d76f5396e5?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");*/
+    background-color: black;
+    background-size:contain;
+    background-position: center;
+}
+
+.container h2{
+    color:#ddd;
+}
+
+.container {
+    position: flex;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 350px;
+    box-sizing: border-box; 
+    background-color: #3a3a3a;
+} 
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.button-group button {
+    /*flex-grow: 1; */
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background: #ddd;
+    color: black;
+    transition: 0.5s;
+    margin: 0 5px; /* Thêm khoảng cách giữa các nút */
+}
+
+.button-group button.active {
+    background: #ed5909;
+    color: white;
+}
+
+.button-group button:hover {
+    background: #1f2937;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.Sign-input {
+    width: 90%;
+    padding:10px;
+    margin: 5px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.Sign-button{
+    margin-top: 10px;
+    height: 43px;
+}
+
+.container button {
+    width: 100%;
+    padding: 10px;
+    background: #ed5909;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #1f2937;
+}
+
+.form-box{
+    margin:10px;
+}

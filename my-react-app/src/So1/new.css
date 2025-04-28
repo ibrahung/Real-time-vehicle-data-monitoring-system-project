@@ -1,0 +1,80 @@
+.new-container {
+    position:absolute;
+    width: 50%;
+    padding: 30px 40px 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(255, 94, 0, 0.2);
+    background-color: #111;
+    color: white;
+    left:30%;
+    margin-top: 0px;
+}
+
+/* Dòng chứa 2 cột */
+.form-row {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin:0px;
+}
+
+/* Mỗi cột */
+.form-column {
+    flex: 1;
+    min-width: 300px;
+    margin:0px;
+}
+
+/* Input và select */
+.form-column input,
+.form-column select {
+    width: 100%;
+    padding: 12px 16px;
+    margin: 10px 0 20px;
+    border-radius: 10px;
+    border: 2px solid #ed5909;
+    background-color: #1c1c1c;
+    color: white;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.form-column input::placeholder {
+    color: #bbb;
+}
+
+.form-column input:focus,
+.form-column select:focus {
+    outline: none;
+    border-color: #ff7700;
+    box-shadow: 0 0 6px rgba(255, 136, 0, 0.6);
+}
+
+/* Label và span */
+.new-container label,span {
+    display: block;
+    font-weight: 600;
+    color: #ff9933;
+}
+
+/* Nút Save */
+button#Save {
+    margin-top: 0;
+    width: 100%;
+    padding: 14px;
+    background-color: #ed5909;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button#Save:hover {
+    background-color: #ff8000;
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 128, 0, 0.4);
+}

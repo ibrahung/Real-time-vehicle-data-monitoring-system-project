@@ -1,0 +1,79 @@
+
+div {
+    margin: 20px;
+}
+.infor{
+    padding-left: 150px;
+    margin:0;
+}
+/* Style the table */
+table {
+    width: 100%;
+    /*border-collapse: collapse;*/
+    margin: 10px 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Style the table headers */
+th {
+    background-color: #ed5909;
+    color: white;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
+}
+
+/* Style for table data */
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect for table rows */
+
+tr {
+    height: 42px;
+}
+
+
+.details-row td {
+    background-color: #ddd; /* Nền xám */
+    padding: 10px;
+    border-radius: 8px;
+    color: #333; /* Chữ màu đen để dễ nhìn */
+}
+
+.details-row div {
+    display: flex;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 5px;
+}
+
+.details-row strong {
+    min-width: 150px;
+    text-align: left;
+    font-weight: bold;
+    color: #222; /* Đậm hơn để dễ đọc */
+}
+
+.details-row span {
+    flex-grow: 1;
+    text-align: left;
+    color: #333; /* Chữ đậm hơn */
+}
+.infor button{
+    background-color: #ed5909;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+tbody{
+    background-color:#ddd;
+}
+
+
+

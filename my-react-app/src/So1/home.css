@@ -1,0 +1,186 @@
+.add-button{
+    display: flex; /* Căn icon và chữ trên cùng một dòng */
+    align-items: center; /* Căn giữa icon và chữ theo chiều dọc */
+    justify-content: flex-start; /* Căn nội dung về bên trái */
+    gap: 15px; /* Tạo khoảng cách giữa icon và chữ */
+    width: 140px;
+    height: 45px;
+    padding: 10px;
+    background: #ed5909;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 600;
+    position:absolute;
+    top: 20px;
+    right:20px;
+    font-size: 15px;
+    border: none;
+}
+.notice-button{
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background: #ed5909;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 600;
+    position:absolute;
+    top: 20px;
+    right:170px;
+    font-size: 20px;
+    border: none;
+}
+.h2-home {
+    color: white ;
+    font-weight: 600;
+    font-size: 30px;
+    position:absolute;
+    top:20px;
+    left: 300px;
+    color: #ff9933;
+}
+
+.badge {
+    background-color: #3a3a3a; /* Màu nền */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px; /* Bo tròn góc */
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 0px 0px  0px 10px; /* Tạo khoảng cách nếu cần */
+    width:50px;
+}
+.real-map h2{
+    font-size: 20px;
+    color: white;
+}
+.real-map span{
+    font-size: 15px;
+    font-weight: 600;
+    padding:20px;
+    padding: 0px;
+}
+
+.img-location{
+    width: 260px;
+    height: 160px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.real-map {
+    position:absolute;
+    top: 100px;
+    right:10px;
+    background-color: #111;
+    padding: 10px;
+    height: 573px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.income{
+    position: absolute;
+    font-size: 30px;
+    color: white ;
+    bottom: 10px;
+    right:30%;
+    background-color:#111 ;
+    padding:10px;
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.income h3{
+    margin:0px;
+    font-size: 20px;
+}
+.income span{
+    margin-right:10px;
+    font-size: 20px;
+}
+.perform{
+    position: absolute;
+    font-size: 30px;
+    color: white ;
+    bottom: 10px;
+    right:55%;
+    background-color:#111 ;
+    padding:10px;
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+}
+.perform h3{
+    margin:0px;
+    font-size: 20px;
+}
+
+.chart-home {
+    width: 720px;  
+    height: 400px; 
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    left: 10px;
+    position: absolute;
+    left:22%;
+    bottom: 25%;
+}
+
+.search {
+    position: absolute;
+    width: 250px;
+    margin: 0px;
+    top: 1.2%;
+    right: 20%;
+}
+
+.search input {
+    width: 80%;
+    padding: 10px 10px 10px 40px; 
+    border: 1px solid #eae6e4;
+    border-radius: 5px;
+    height: 20px;
+    background-color: #3a3a3a;
+    margin-top: 5%;
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.slider-container {
+    position: absolute;
+    bottom: 20%;
+    left: 22%;
+    margin-top: 10px;
+    width: 720px;
+    text-align: center;
+}
+  
+.slider {
+    width: 720px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s;
+}
+  
+.slider:hover {
+    background: #ed5909;
+  }
+
+

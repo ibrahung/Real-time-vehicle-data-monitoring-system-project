@@ -1,0 +1,72 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 95vh;
+    background-color: #111;
+    color: white;
+    padding-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px rgba(255, 94, 0, 0.2);
+}
+
+.sidebar h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar ul li {
+    display: flex; /* Căn icon và chữ trên cùng một dòng */
+    align-items: center; /* Căn giữa icon và chữ theo chiều dọc */
+    justify-content: flex-start; /* Căn nội dung về bên trái */
+    gap: 20px; /* Tạo khoảng cách giữa icon và chữ */
+    padding: 10px;
+    width: 80%;
+    font-weight: 700;
+    background-color: #ed5909;
+    border-radius: 8px;
+    text-align: left; /* Căn chữ về bên trái */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.sidebar li{
+    margin: 3px;
+}
+
+.icons {
+    font-size: 20px; /* Tăng kích thước icon nếu cần */
+}
+
+
+.sidebar ul li:hover {
+    background-color: #1f2937;
+}
+
+.sidebar ul li.active {
+    background-color: #1f2937; /* Màu khi được chọn */
+    color: #FFF;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);  /* Hiệu ứng khi được chọn */
+}

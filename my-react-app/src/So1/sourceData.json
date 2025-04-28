@@ -1,0 +1,166 @@
+[
+    {
+        "label":"Duy",
+        "speed": 10
+    },
+    {
+        "label":"Bach",
+        "speed": 20
+    },
+    {
+        "label":"3",
+        "speed": 30
+    },
+    {
+        "label":"4",
+        "speed": 20
+    },
+    {
+        "label":"5",
+        "speed": 30
+    },
+    {
+        "label":"6",
+        "speed": 50
+    },
+    {
+        "label":"7",
+        "speed": 70
+    },
+    {
+        "label":"8",
+        "speed": 80
+    },
+    {
+        "label":"9",
+        "speed": 80
+    },
+    {
+        "label":"10",
+        "speed": 30
+    },
+    {
+        "label":"11",
+        "speed": 80
+    },
+    {
+        "label":"9",
+        "speed": 70
+    },
+    {
+        "label":"12",
+        "speed": 60
+    },
+    {
+        "label":"13",
+        "speed": 70
+    },
+    {
+        "label":"14",
+        "speed": 80
+    },
+    {
+        "label":"15",
+        "speed": 90
+    },
+    {
+        "label":"16",
+        "speed": 80
+    },
+    {
+        "label":"17",
+        "speed": 80
+    },
+    {
+        "label":"18",
+        "speed": 80
+    },
+    {
+        "label":"19",
+        "speed": 80
+    },
+    {
+        "label":"20",
+        "speed": 50
+    },
+    {
+        "label":"21",
+        "speed": 80
+    },
+    {
+        "label":"22",
+        "speed": 55
+    },
+    {
+        "label":"23",
+        "speed": 70
+    },
+    {
+        "label":"24",
+        "speed": 70
+    },
+    {
+        "label":"25",
+        "speed": 80
+    },
+    {
+        "label":"26",
+        "speed": 42
+    },
+    {
+        "label":"27",
+        "speed": 30
+    },
+    {
+        "label":"28",
+        "speed": 65
+    },
+    {
+        "label":"29",
+        "speed": 60
+    },
+    {
+        "label":"30",
+        "speed": 90
+    },
+    {
+        "label":"31",
+        "speed": 80
+    },
+    {
+        "label":"32",
+        "speed": 55
+    },
+    {
+        "label":"33",
+        "speed": 70
+    },
+    {
+        "label":"34",
+        "speed": 70
+    },
+    {
+        "label":"35",
+        "speed": 80
+    },
+    {
+        "label":"36",
+        "speed": 42
+    },
+    {
+        "label":"37",
+        "speed": 30
+    },
+    {
+        "label":"38",
+        "speed": 65
+    },
+    {
+        "label":"39",
+        "speed": 60
+    },
+    {
+        "label":"40",
+        "speed": 90
+    }
+]

@@ -1,0 +1,74 @@
+{
+  "vehicles": [
+    {
+      "id": "c518",
+      "renter_name": "Đình Duy",
+      "cccd": "062203000418",
+      "vehicle_name": "Toyota Vios",
+      "license_plate": "82B1-32154",
+      "phone": "0965045544",
+      "start_date": "2025-04-05T15:42",
+      "expected_return_date": "2025-04-07T15:42",
+      "rental_type": "thuê ngày",
+      "cost": "5000",
+      "payment_status": "Paid",
+      "status": "đang thuê"
+    },
+    {
+      "id": "ce3c",
+      "renter_name": "Bách",
+      "cccd": "062203000418",
+      "vehicle_name": "Honda ",
+      "license_plate": "51H-998888",
+      "phone": "0954224551",
+      "start_date": "2025-04-12T15:43",
+      "expected_return_date": "2025-04-06T15:43",
+      "rental_type": "Week",
+      "cost": "3000",
+      "payment_status": "Paid",
+      "status": "đang thuê"
+    },
+    {
+      "id": "c054",
+      "renter_name": "Kiệt",
+      "cccd": "06220384888",
+      "vehicle_name": "Honda ",
+      "license_plate": "51H-998888",
+      "phone": "09654524214",
+      "start_date": "2025-04-07T15:47",
+      "expected_return_date": "2025-04-09T15:47",
+      "rental_type": "Week",
+      "cost": "2000",
+      "payment_status": "Paid",
+      "status": "Returned"
+    },
+    {
+      "id": "3558",
+      "renter_name": "Hoàng",
+      "cccd": "062203000418",
+      "vehicle_name": "Mazda-CX5",
+      "license_plate": "81H-46456",
+      "phone": "09654524214",
+      "start_date": "2025-04-12T15:53",
+      "expected_return_date": "2025-04-16T15:53",
+      "rental_type": "Day",
+      "cost": "3000",
+      "payment_status": "Not yet paid",
+      "status": "Renting"
+    },
+    {
+      "id": "57bb",
+      "renter_name": "Hoàng Minh",
+      "cccd": "0622562244",
+      "vehicle_name": "Innova",
+      "license_plate": "51H-302154",
+      "phone": "0907847299",
+      "start_date": "2025-04-16T15:12",
+      "expected_return_date": "2025-04-19T15:12",
+      "rental_type": "Day",
+      "cost": "3111",
+      "payment_status": "Not yet paid",
+      "status": "Renting"
+    }
+  ]
+}
