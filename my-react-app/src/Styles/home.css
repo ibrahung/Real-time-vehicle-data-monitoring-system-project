@@ -13,8 +13,8 @@
     transition: 0.5s;
     font-weight: 600;
     position:absolute;
-    top: 20px;
-    right:20px;
+    top: 3%;
+    right:2%;
     font-size: 15px;
     border: none;
 }
@@ -28,8 +28,8 @@
     transition: 0.5s;
     font-weight: 600;
     position:absolute;
-    top: 20px;
-    right:170px;
+    top: 3%;
+    right:12%;
     font-size: 20px;
     border: none;
 }
@@ -41,6 +41,7 @@
     top:20px;
     left: 300px;
     color: #ff9933;
+    margin: auto;
 }
 
 .badge {
@@ -51,58 +52,100 @@
     font-size: 14px;
     font-weight: bold;
     margin-left: 0px 0px  0px 10px; /* Tạo khoảng cách nếu cần */
-    width:50px;
+    width:60px;
 }
-.real-map h2{
-    font-size: 20px;
-    color: white;
-}
-.real-map span{
-    font-size: 15px;
-    font-weight: 600;
-    padding:20px;
-    padding: 0px;
-}
-
-.img-location{
-    width: 260px;
-    height: 160px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
 .real-map {
     position:absolute;
-    top: 100px;
+    top: 8%;
+    bottom: 2%;
     right:10px;
-    background-color: #111;
+    background-color: #1E2A38;
     padding: 10px;
-    height: 573px;
     border-radius: 10px;
     width: 300px;
 }
+.real-map h3 {
+  margin-bottom: 20px;
+  color: #ff7411;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
 
-.income{
+.real-map p {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+  width: 100%;
+}
+
+.status-summary{
+    margin-left: 0;
+}
+
+.label {
+  font-weight: bold;
+  color: white;
+}
+
+.value {
+  color: white;
+}
+
+
+.status-summary {
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  color: white;
+  line-height: 1.8;
+}
+.status-summary p {
+  margin: 0.5rem 0;
+}
+.status-summary{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.offline-list{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.offline-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.offline-list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: white;
+  margin-top: 5px;
+}
+
+.error-banner{
     position: absolute;
     font-size: 30px;
     color: white ;
-    bottom: 10px;
-    right:30%;
-    background-color:#111 ;
+    bottom: 2%;
+    right:28%;
+    background-color:#1E2A38 ;
     padding:10px;
     height: 100px;
     width: 300px;
     border-radius: 10px;
 }
 
-.income h3{
+.error-banner h3{
     margin:0px;
     font-size: 20px;
+    color: #FF6A00;
 }
-.income span{
+.error-banner span{
     margin-right:10px;
     font-size: 20px;
 }
@@ -110,9 +153,9 @@
     position: absolute;
     font-size: 30px;
     color: white ;
-    bottom: 10px;
-    right:55%;
-    background-color:#111 ;
+    bottom: 2%;
+    left: 24%;
+    background-color:#1E2A38 ;
     padding:10px;
     height: 100px;
     width: 300px;
@@ -121,18 +164,21 @@
 .perform h3{
     margin:0px;
     font-size: 20px;
+    color: #FF6A00;
 }
 
 .chart-home {
-    width: 720px;  
-    height: 400px; 
+    width: 750px;  
+    height: 430px; 
     padding: 20px;
     border-radius: 10px;
-    margin: auto;
+    margin:auto;
+    margin-bottom: 10px;
     left: 10px;
     position: absolute;
     left:22%;
     bottom: 25%;
+    background-color: #1E2A38;
 }
 
 .search {
@@ -166,21 +212,71 @@
     bottom: 20%;
     left: 22%;
     margin-top: 10px;
-    width: 720px;
+    width: 780px;
     text-align: center;
 }
   
 .slider {
-    width: 720px;
-    height: 10px;
-    background: #ccc;
-    border-radius: 5px;
-    outline: none;
-    transition: background 0.3s;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 720px;
+  height: 10px;
+  background: #2A3B4D;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
 }
+
+/* Chrome */
+.slider::-webkit-slider-runnable-track {
+  height: 10px;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: #FF6A00;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-top: -5px;
+  position: relative;
+  z-index: 2;
+}
+
+
+.slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  background: #FF6A00;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+
   
-.slider:hover {
-    background: #ed5909;
-  }
+.plate-select-dropdown{
+    border-radius: 8px;
+    border: 2px solid #FF6A00;
+    background-color: #1c1c1c;
+    color: white;
+    height: 35px;
+    width: 150px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.plate-select-container{
+    position: absolute;
+    right: 28%;
+    top: 13%;
+    z-index: 10;
+    margin:0;
+}
 
 

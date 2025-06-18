@@ -4,16 +4,15 @@ import { BsFillInfoSquareFill } from "react-icons/bs";
 import { MdOutlineMonitor } from "react-icons/md";
 import { IoSettings } from "react-icons/io5";
 import { AiFillFileAdd } from "react-icons/ai";
-import "./pg1.css";
+import "../Styles/navbar.css";
 
-function Pg1({ onNavigate }) {
+function Navbar({ onNavigate }) {
     const [activeMenu, setActiveMenu] = useState("");
 
     const handleMenuClick = (menu) => {
         setActiveMenu(menu);
         onNavigate(menu);
     };
-
     return (
         <div className="sidebar">
             <h2>Quản lý xe</h2>
@@ -53,4 +52,4 @@ function Pg1({ onNavigate }) {
     );
 }
 
-export default Pg1;
+export default Navbar;

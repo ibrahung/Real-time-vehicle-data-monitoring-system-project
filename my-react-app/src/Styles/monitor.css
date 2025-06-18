@@ -1,0 +1,28 @@
+.monitor-page {
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  height:60%;
+  font-weight: 600;
+}
+
+.monitor-header {
+  margin-top: 20px;
+}
+
+.open-grafana-button {
+  padding: 12px 24px;
+  background-color: #ed5909;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.2s ease;
+}
+
+.open-grafana-button:hover {
+  background-color:  #1f2937;
+}

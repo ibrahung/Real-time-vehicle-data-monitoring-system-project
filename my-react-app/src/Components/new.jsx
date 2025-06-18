@@ -1,19 +1,19 @@
-import "./new.css";
+import "../Styles/new.css";
 import { useState } from "react";
 
 function New() {
     const [vehicle, setVehicle] = useState({
-        renter_name: "",
-        cccd: "",
-        vehicle_name: "",
         license_plate: "",
-        phone: "",
+        renter_name: "",
         start_day: "",
+        phone: "",
+        cccd: "",
         return_day: "",
-        rental_type: "Day",
+        rental_type: "Thuê ngày",
         cost: "",
-        payment_status: "Not yet paid",
-        status: "Renting",
+        payment_status: "Chưa thanh toán",
+        status: "Đang thuê",
+        vehicle_name: "",
     });
 
     const handleChange = (e) => {
@@ -28,7 +28,6 @@ function New() {
                 return;
             }
         }
-
         try {
             const response = await fetch("http://localhost:8000/customers", {
                 method: "POST",
@@ -59,54 +58,53 @@ function New() {
             console.error("Lỗi:", error);
         }
     };
-
     return (
         <div className="new-container">
             <div className="form-row">
                 <div className="form-column">
-                    <label>Vehicle Name</label>
+                    <label>Tên xe</label>
                     <input type="text" name="vehicle_name" value={vehicle.vehicle_name} placeholder="Ví dụ: Honda CR-V" required onChange={handleChange} />
 
-                    <label>License plate</label>
+                    <label>Biển số xe</label>
                     <input type="text" name="license_plate" value={vehicle.license_plate} placeholder="Ví dụ: 51H-342876" required onChange={handleChange} />
 
-                    <label>Customer's name</label>
+                    <label>Tên khách hàng</label>
                     <input type="text" name="renter_name" value={vehicle.renter_name} placeholder="Lucas Graham" required onChange={handleChange} />
 
-                    <label>Identification card</label>
+                    <label>Căn cước công dân</label>
                     <input type="text" name="cccd" value={vehicle.cccd} placeholder="123456789012" required onChange={handleChange} />
 
-                    <label>Phone number</label>
+                    <label>Số điện thoại</label>
                     <input type="tel" name="phone" value={vehicle.phone} required onChange={handleChange} />
                 </div>
 
                 <div className="form-column">
-                    <label>Retal day</label>
+                    <label>Ngày thuê</label>
                     <input type="datetime-local" name="start_day" value={vehicle.start_day} required onChange={handleChange} />
 
-                    <label>Back day</label>
+                    <label>Ngày trả</label>
                     <input type="datetime-local" name="return_day" value={vehicle.return_day} required onChange={handleChange} />
 
-                    <label>Rental cost</label>
+                    <label>Kiểu thuê</label>
                     <select name="rental_type" value={vehicle.rental_type} onChange={handleChange}>
-                        <option value="Day">Day</option>
-                        <option value="Week">Week</option>
-                        <option value="Month">Month</option>
+                        <option value="Thuê ngày">Thuê ngày</option>
+                        <option value="Thuê tuần">Thuê tuần</option>
+                        <option value="Thuê tháng">Thuê tháng</option>
                     </select>
 
-                    <label>Status</label>
+                    <label>Trạng thái</label>
                     <select name="status" value={vehicle.status} onChange={handleChange}>
-                        <option value="Renting">Renting</option>
-                        <option value="Returned"> Returned</option>
+                        <option value="Đang thuê">Đang thuê</option>
+                        <option value="Đã trả"> Đã trả</option>
                     </select>
 
-                    <label>Payment</label>
+                    <label>Trạng thái thanh toán</label>
                     <select name="payment_status" value={vehicle.payment_status} onChange={handleChange}>
-                        <option value="Not yet paid">Not yet paid</option>
-                        <option value="Paid">Paid</option>
+                        <option value="Chưa thanh toán">Chưa thanh toán</option>
+                        <option value="Đã thanh toán">Đã trả</option>
                     </select>
 
-                    <label>Cost</label>
+                    <label>Giá tiền</label>
                     <input type="number" name="cost" value={vehicle.cost} placeholder="Thousand Dong (VNĐ)" required onChange={handleChange} />
                 </div>
             </div>

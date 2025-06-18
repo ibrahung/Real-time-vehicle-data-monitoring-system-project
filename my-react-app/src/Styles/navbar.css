@@ -4,7 +4,7 @@
     left: 0;
     width: 260px;
     height: 95vh;
-    background-color: #111;
+    background-color:#1E2A38;
     color: white;
     padding-top: 20px;
     box-sizing: border-box;
@@ -42,7 +42,7 @@
     padding: 10px;
     width: 80%;
     font-weight: 700;
-    background-color: #ed5909;
+    background-color:#1F45A3;
     border-radius: 8px;
     text-align: left; /* Căn chữ về bên trái */
     cursor: pointer;
@@ -65,7 +65,7 @@
 }
 
 .sidebar ul li.active {
-    background-color: #1f2937; /* Màu khi được chọn */
+    background-color: #ed5909; /* Màu khi được chọn */
     color: #FFF;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     transform: scale(1.05);  /* Hiệu ứng khi được chọn */

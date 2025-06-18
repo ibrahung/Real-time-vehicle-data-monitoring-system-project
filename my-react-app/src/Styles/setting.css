@@ -1,0 +1,72 @@
+#group-button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    margin:50% 40% 0 40%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#group-button button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ed5909;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#group-button button:hover {
+    background-color: #1f2937;
+}
+
+#group-button button:active {
+    background-color: #1f2937;
+}
+
+history-box {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.history-box h3 {
+    left: 30%;
+    text-align: center;
+    font-size: 30px;
+    color: #ed5909;
+    margin-bottom: 20px;
+}
+
+.history-box table {
+    position: relative;
+    left: 5%;
+    border-collapse: collapse;
+    width: 1000px;
+}
+
+.history-box th,
+.history-box td {
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+.history-box th {
+    background-color: #ed5909;
+    color: white;
+    font-weight: 600;
+}
+
+.history-box tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+

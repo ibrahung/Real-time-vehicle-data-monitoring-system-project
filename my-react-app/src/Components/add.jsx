@@ -1,10 +1,12 @@
 import { useState } from "react";
-import "./add.css"
+import "../Styles/add.css"
 
 function AddVehicle({ onNavigate }) {
     const [vehicle, setVehicle] = useState({
-        license_plate: "",
-        esp32_id: ""
+        License_plate: "",
+        Device_ID: "",
+        Install_Date: "",
+        Username: ""
     });
 
     const handleChange = (e) => {
@@ -12,7 +14,7 @@ function AddVehicle({ onNavigate }) {
     };
 
     const handleSubmit = async () => {
-        if (!vehicle.license_plate || !vehicle.esp32_id) {
+        if (!vehicle.License_plate || !vehicle.Device_ID|| !vehicle.Install_Date|| !vehicle.Username) {
             alert("Vui lòng nhập đầy đủ thông tin!");
             return;
         }
@@ -22,14 +24,19 @@ function AddVehicle({ onNavigate }) {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                    ID_ESP32: vehicle.esp32_id,
-                    License_Plate: vehicle.license_plate
+                    device_id: vehicle.Device_ID,
+                    license_plate: vehicle.License_plate,
+                    install_date: vehicle.Install_Date,
+                    username: vehicle.Username
                 }),
             });
 
             if (response.ok) {
                 alert("Xe đã được thêm thành công!");
-                setVehicle({ license_plate: "", esp32_id: "" });
+                setVehicle({License_plate: "",
+                            Device_ID: "",
+                            Install_Date: "",
+                            Username: "" });
             } else {
                 alert("Thêm xe thất bại! Vui lòng thử lại.");
             }
@@ -41,8 +48,10 @@ function AddVehicle({ onNavigate }) {
 
     return (
         <div className="add-vehicle-container">
-            <input type="text" name="license_plate" placeholder="Biển số xe" value={vehicle.license_plate} onChange={handleChange} />
-            <input type="text" name="esp32_id" placeholder="Mã ESP32" value={vehicle.esp32_id} onChange={handleChange} />
+            <input type="text" name="License_plate" placeholder="Biển số xe" value={vehicle.License_plate} onChange={handleChange} />
+            <input type="text" name="Device_ID" placeholder="ID ESP32" value={vehicle.Device_ID} onChange={handleChange} />
+            <input type="datetime-local" name="Install_Date" value={vehicle.Install_Date} onChange={handleChange} />
+            <input type="text" name="Username" placeholder="Tên chủ sở hữu" value={vehicle.Username} onChange={handleChange} />
             <button onClick={handleSubmit}>Add Device</button>
         </div>
     );

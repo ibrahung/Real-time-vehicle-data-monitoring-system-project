@@ -5,6 +5,8 @@ div {
 .infor{
     padding-left: 150px;
     margin:0;
+    max-height: calc(100vh - 50px); /* chiều cao tối đa của khối nội dung */
+    overflow-y: auto; /* thêm thanh cuộn dọc nếu nội dung dài */
 }
 /* Style the table */
 table {
@@ -75,5 +77,61 @@ tbody{
     background-color:#ddd;
 }
 
+/* Khoảng cách giữa các input trong phần sửa */
+.details-row input,
+.details-row select {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Style nút Lưu / Hủy */
+.details-row button {
+    margin-right: 8px;
+    padding: 6px 12px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.details-row .deletebutton {
+    background: #dc3545;
+}
+
+.details-row .fixbutton{
+    background-color: #dde811;
+}
+
+.details-row .archivebutton{
+    background-color: #007bff;
+}
+
+.details-row button:hover{
+    background-color:  #ed5909;
+}
+
+/* Tăng khoảng cách giữa các dòng input */
+.details-row div {
+    margin-bottom: 10px;
+}
+
+.details-row .canclebutton{
+    background-color:  #dc3545;;
+}
+
+.details-row .savebutton{
+    background-color: #007bff;
+}
+
+/* Nút chi tiết, ẩn*/
+.morebutton{
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+}
 
 

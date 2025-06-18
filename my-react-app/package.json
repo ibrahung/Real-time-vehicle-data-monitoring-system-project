@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "backend": "cd ../my-backend && py -m uvicorn main:app --reload",
+    "dev-all": "concurrently \"npm run dev\" \"npm run backend\"",
     "start": "react-scripts start",
     "build": "vite build",
     "lint": "eslint .",

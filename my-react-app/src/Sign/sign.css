@@ -5,18 +5,16 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    /*background: url("https://images.unsplash.com/photo-1516771317026-14d76f5396e5?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");*/
+    background: url("https://wallpapers-clan.com/wp-content/uploads/2024/06/racing-car-night-speed-desktop-wallpaper-preview.jpg");
     background-color: black;
     background-size:contain;
     background-position: center;
 }
 
-.container h2{
-    color:#ddd;
-}
 
 .container {
-    position: flex;
+    position: relative;
+    top: 25%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
@@ -33,29 +31,13 @@ body {
     margin-top: 15px;
 }
 
-.button-group button {
-    /*flex-grow: 1; */
-    padding: 10px;
-    cursor: pointer;
-    font-size: 15px;
-    background: #ddd;
-    color: black;
-    transition: 0.5s;
-    margin: 0 5px; /* Thêm khoảng cách giữa các nút */
-}
-
-.button-group button.active {
-    background: #ed5909;
-    color: white;
-}
-
-.button-group button:hover {
-    background: #1f2937;
-    color: white;
-}
 
 h2 {
     margin-bottom: 10px;
+    color: #ed5909;
+    padding: 0px;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .Sign-input {
@@ -80,6 +62,7 @@ h2 {
     cursor: pointer;
     transition: 0.5s;
     font-weight: 600;
+    font-size: medium;
 }
 
 button:hover {
@@ -87,5 +70,5 @@ button:hover {
 }
 
 .form-box{
-    margin:10px;
+    margin:5px;
 }
