@@ -2,7 +2,7 @@
 
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-import models, schemas, crud
+import crud
 from database import get_db
 
 router = APIRouter(
@@ -10,7 +10,21 @@ router = APIRouter(
     tags=["Car"]
 )
 
-@router.post("/add")
-def add_car_data(car_data: schemas.CarDataCreate, db: Session = Depends(get_db)):
-    db_car_data = crud.create_car_data(db, car_data)
-    return db_car_data
+
+@router.get("/speed-data-by-plate")
+def get_speed_by_plate(plate: str, db: Session = Depends(get_db)):
+    return crud.get_speed_data_by_plate(db, plate)
+    
+@router.get("/list")
+def get_car_list(db: Session = Depends(get_db)):
+    return crud.get_car_list(db)
+
+@router.get("/online-list")
+def get_online_cars(db: Session = Depends(get_db)):
+    return crud.get_online_cars(db)
+    
+@router.get("/error-list")
+def get_error_list(db: Session = Depends(get_db)):
+    return crud.get_error_list(db)
+    
+    
